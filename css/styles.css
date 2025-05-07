@@ -1,0 +1,746 @@
+@import url('satoshi.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color:#fff ;
+    color: #000;
+  }
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    line-height: 1.4;   
+}
+
+.fname{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+h1{
+    margin-top: 0.2%;
+    margin-left: 5%;
+    color: white;
+}
+
+
+header {
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;  
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #809FFF;
+    transition: all 0.3s ease;  
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.hamburger{
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger span{
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    border-radius: 2px;
+}
+
+h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 5%;
+    letter-spacing: -3.5px;
+}
+
+#Introduction h2{
+    margin-right: none;
+}
+
+#Introduction {
+    padding-top: 3%; 
+    padding-left: 10%;
+    width: 55%;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.fname1{
+    margin-left: 10%;
+}
+
+.undrlin{
+    text-decoration: underline;
+    text-decoration-color: rgb(32, 4, 214);
+}
+
+#About{
+    padding-top: 2.5%; 
+    padding-left: 10%;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 55%;
+}
+
+#About h2{
+    margin-bottom: 3%;
+}
+
+#art{
+    text-decoration: none;
+    color: #E1306C;
+}
+
+#art:hover{
+    text-decoration: underline;
+}
+
+#goa{
+    text-decoration: none;
+    color: #e5c298;
+    transition: all 0.3s ease;  
+}
+
+#goa:hover{
+    text-decoration: underline;
+}
+
+#webdevvvy{
+    text-decoration: none;
+    color: #86ea5a;
+    transition: all 0.3s ease;
+}
+#webdevvvy:hover{
+    text-decoration: underline;
+}
+
+#senna{
+    text-decoration: none;
+    color: #e5cb00;
+    transition: all 0.3s ease;
+}
+
+#senna:hover{
+    text-decoration: underline;
+}
+
+#Skills{
+    padding-top: 2.5%; 
+    padding-left: 10%;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 55%;
+}
+
+#Skills h2{
+    margin-bottom: 3%;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+.skill-item {
+    background-color: transparent;
+    color: #e2e8f0;
+    padding: 5px;
+    border: 2px solid #e2e8f0;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background-color: #e2e8f0;
+    color: #0f172a;
+} 
+
+#Spotify{
+    padding-top: 2.5%; 
+    padding-left: 10%;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 55%;
+}
+
+.mplayer{
+    height: 100%;
+    width: 65%;
+    margin-left: 10%;
+}
+
+#Spotify h2{
+    margin-bottom: 3%;
+    color: #1DB954;
+}
+
+#Spotify a{
+    text-decoration: none;
+}
+
+#Spotify a:hover{
+    text-decoration: underline;
+    color: #1DB954;
+}
+
+#Contact{
+    padding-top: 2.5%;
+    padding-left: 10%;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 55%;
+}
+
+#Contact h2{
+    margin-bottom: 3%;
+}
+
+#Contact .gmail{
+    color: #EA4335;
+    text-decoration: none;
+}
+
+#Contact .gmail:hover{
+    text-decoration: underline;
+}
+
+#Contact .instagram{
+    color: #E1306C;
+    text-decoration: none;
+}
+
+#Contact .instagram:hover{
+    text-decoration: underline;
+}
+
+#Contact .github{
+    color: #1f6feb;
+    text-decoration: none;
+}
+
+#Contact .github:hover{
+    text-decoration: underline;
+}
+
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 2.5%;
+    margin-right: 0.8%;
+    margin-left: 2%;
+}
+
+.form-fields label{
+    font-weight: bold;
+    align-items: flex-start;
+    font-size: 0.9rem;
+}
+
+.form-fields textarea{
+    align-items: center;
+}
+
+.form-fields input{
+    height: 2rem;
+}
+
+.form-fields input, textarea{
+    width: 100%;
+    max-width: 500px;
+    background-color: black;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.formbox{
+    background-color: black;
+    border: 2px white solid;
+    border-radius: 10px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 70%;
+    height: 350px;
+}
+
+#subbutton {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: #F24E1E solid 0.1rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.75rem 0;
+    margin: 2.5% auto 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 1%;
+}
+
+#subbutton:hover {
+    background-color: #F24E1E;
+    border-color: #F24E1E;
+    color: white;
+}
+
+footer{
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-text{
+    margin-right: 4%;
+    margin-top: 6%;
+    width: 35vw;
+    font-size: 0.8rem;
+}
+
+.footer-text a{
+    text-decoration: none;
+    transition: all 0.3s ease;  
+}
+
+footer p.copyright{
+    text-align: center;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+.socials{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.social-icon{
+    width: 25%;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.social-icon a {
+    text-decoration: none;
+    padding-right: 1.1%;
+}
+
+.social-icon a svg{
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    transition: all 0.3s ease;  
+}
+
+.figma{
+    color: #F24E1E;
+}
+
+.figma:hover{
+    text-decoration: underline;
+}
+
+.vscode{
+    color: #007acc;
+}
+
+.vscode:hover{
+    text-decoration: underline;
+}
+
+.vercel{
+    color: #15814f;
+}
+.vercel:hover{
+    text-decoration: underline;
+}
+
+.supabase{
+    color: #3ECF8E;
+}
+.supabase:hover{
+    text-decoration: underline;
+}
+
+.whatsapp:hover{
+    fill: #25D366;
+}
+
+.instagram:hover{
+    fill: #E1306C;
+}
+
+.linkedin:hover{
+    fill: #0077B5;
+}
+
+.gmail:hover{
+    fill: #EA4335;
+}
+
+.github:hover{
+    fill: #1f6feb;
+}
+
+/*______________Media Queries for Responsive Design______________*/
+
+
+/* Media Queries for Tablets */
+@media (max-width: 768px){
+    body{
+        font-size: 0.8rem;
+        letter-spacing: normal;
+        line-height: 1;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center;
+        width: 30px;
+        height: 24px;
+        gap: 6px; /* spacing between spans */
+      }
+      
+      .hamburger span {
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: 0.4s ease;
+        transform-origin: center;
+      }
+      
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      
+        
+    .menu{
+        display: none;
+    }
+
+    .menu .btn {
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px 0;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
+    
+      .menu .btn:hover {
+        background-color: transparent;
+        color: #809FFF;
+        border: 1px solid #809FFF;
+      }
+    
+    .menu.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: black; /* white background */
+        padding: 15px 20px;
+        border: 1px solid #ccc;
+        width: 200px; /* set a visible width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional shadow for visibility */
+        z-index: 1000; /* ensures it's above other content */
+    }
+
+    .fname{
+        margin-top: 1%;
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-left: 3%;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin-left: 0%;
+        letter-spacing: -1.8px;
+    }
+
+    #Introduction{
+        width: 90%;
+    }
+
+    #About{
+        width: 90%;
+    }
+
+    #Skills{
+        width: 90%;
+    }
+
+    #Spotify{
+        width: 90%;
+    }
+
+    #Contact{
+        width: 90%;
+    }
+    
+    #Introduction p{
+        width: 70%;
+    }
+    
+    #About p{
+        width: 70%;
+    }
+
+    #Skills p{
+        width: 70%;
+    }
+
+    #Spotify p{
+        width: 70%;
+    }
+
+    #Contact p{
+        width: 70%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .formbox{
+        width: 90%;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+
+    .social-icon a svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .footer-text{
+        width: 40vw;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 375px){
+
+    body{
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1;
+    }
+
+    .fname{
+        font-size: 1.3rem;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center;
+        width: 30px;
+        height: 24px;
+        gap: 6px; /* spacing between spans */
+      }
+      
+      .hamburger span {
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: 0.4s ease;
+        transform-origin: center;
+      }
+      
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      
+        
+    .menu{
+        display: none;
+    }
+
+    .menu .btn {
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px 0;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
+    
+      .menu .btn:hover {
+        background-color: transparent;
+        color: #809FFF;
+        border: 1px solid #809FFF;
+      }
+    
+    .menu.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: black; /* white background */
+        padding: 15px 20px;
+        border: 1px solid #ccc;
+        width: 200px; /* set a visible width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional shadow for visibility */
+        z-index: 1000; /* ensures it's above other content */
+    } 
+
+    h2{
+        font-size: 1.2rem;
+        letter-spacing: -1.2px;
+    }
+
+    #Introduction p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    #About p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    #Skills p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    #Spotify p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .mplayer{
+        width: 80%;
+        height: 75%;
+    }
+
+    #Contact p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .socials{
+        height: 30vh;
+    }
+
+    .social-icon a svg{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .footer-text{
+        width: 40vw;
+        font-size: 0.6rem;
+        line-height: normal;
+    }
+
+    .copyright{
+        font-size: 0.5rem;
+    }
+    
+}
