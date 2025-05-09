@@ -28,3 +28,25 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
 });
+
+//preventing the form from going to the next page
+const form = document.getElementById("contact-form");
+const thankYou = document.getElementById("thank-you-message");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (response.ok) {
+    form.style.display = "none";
+    thankYou.style.display = "block";
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+});
